@@ -9,6 +9,6 @@ import java.util.List;
 
 @Repository
 public interface ProductRepository extends JpaRepository<ProductEntity, Integer> {
-    @Query("select a from ProductEntity a where a.title like %:keyword%")
+    @Query("select a from ProductEntity a where a.title like :keyword")
     List<ProductEntity> findTitle(@Param("keyword") String keyword);
 }

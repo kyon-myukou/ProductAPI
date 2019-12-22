@@ -14,8 +14,6 @@ public class ProductEntity {
     private Integer price;
     private String image_title;
 
-    //private Integer state;
-
     public Integer getId() {
         return id;
     }
